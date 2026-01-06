@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeanne & Jeremy — Mariage</title>
+
+  <!-- Open Graph / partage réseaux sociaux -->
+  <meta property="og:title" content="Jeanne & Jeremy - Mariage 2026">
+  <meta property="og:description" content="Nous vous invitons à célébrer notre union le 10 juillet 2026 à Arcachon.">
+  <meta property="og:image" content="images/photo.jpeg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --white:#ffffff;
+      --gold:#c9a24d;
+      --dark:#1f1f1f;
+      --soft:#f7f6f3;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Montserrat', sans-serif;
+      color:var(--dark);
+      background:var(--soft);
+      line-height:1.6;
+    }
+    header{
+      min-height:100vh;
+      background:linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('images/photo.jpeg') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:2rem;
+    }
+    header h1{
+      font-family:'Playfair Display', serif;
+      font-size:3rem;
+      margin-bottom:.5rem;
+      letter-spacing:2px;
+    }
+    header p{font-size:1.1rem}
+    .cta{
+      display:inline-block;
+      margin-top:1.5rem;
+      padding:.8rem 1.8rem;
+      border:1px solid var(--gold);
+      color:white;
+      text-decoration:none;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      transition:.3s;
+    }
+    .cta:hover{background:var(--gold);color:var(--dark)}
+
+    section{
+      max-width:1000px;
+      margin:0 auto;
+      padding:4rem 1.5rem;
+      background:var(--soft);
+    }
+    section h2{
+      font-family:'Playfair Display', serif;
+      font-size:2.2rem;
+      text-align:center;
+      margin-bottom:2rem;
+      color:var(--gold);
+    }
+
+    .card{
+      background:white;
+      padding:2rem;
+      border-radius:6px;
+      box-shadow:0 10px 30px rgba(0,0,0,.05);
+    }
+
+    .infos p{text-align:center}
+
+    .map iframe{
+      width:100%;
+      height:350px;
+      border:0;
+      border-radius:6px;
+    }
+
+    .rsvp form{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1rem;
+    }
+    .rsvp form input, .rsvp form select, .rsvp form textarea{
+      padding:.7rem;
+      font-family:'Montserrat', sans-serif;
+      border:1px solid #ddd;
+      border-radius:4px;
+      width:100%;
+    }
+    .rsvp form textarea{grid-column:1 / -1}
+    .rsvp button{
+      grid-column:1 / -1;
+      margin-top:1rem;
+      padding:.8rem;
+      background:var(--gold);
+      color:white;
+      border:none;
+      font-size:1rem;
+      cursor:pointer;
+      border-radius:4px;
+    }
+
+    footer{
+      text-align:center;
+      padding:2rem 1rem;
+      font-size:.9rem;
+      color:#777;
+    }
+
+    @media(max-width:700px){
+      header h1{font-size:2.3rem}
+      .rsvp form{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Jeanne & Jeremy</h1>
+    <p>10 juillet 2026 — Arcachon</p>
+    <a href="#rsvp" class="cta">Confirmer sa présence</a>
+  </div>
+</header>
+
+<section>
+  <h2>Le grand jour</h2>
+  <div class="card infos">
+    <p><strong>Date :</strong> 10 juillet 2026</p>
+    <p><strong>Lieu :</strong> Salle du Tir au Vol — Arcachon</p>
+    <p><strong>Cérémonie :</strong> 16h</p>
+    <p style="font-style:italic">Le reste du programme sera communiqué prochainement.</p>
+  </div>
+</section>
+
+<section class="map">
+  <h2>Lieu & accès</h2>
+  <div class="card">
+    <p style="text-align:center">10 avenue du Parc, 33120 Arcachon</p>
+    <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=10+avenue+du+parc+33120+arcachon&output=embed"></iframe>
+  </div>
+</section>
+
+<section id="rsvp" class="rsvp">
+  <h2>Confirmer votre présence</h2>
+  <div class="card">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdCHcYvu9Ea415sjW0IEJEgnaW8kWVRltGpQ6ub8wPeFx2NaA/viewform?embedded=true" width="100%" height="650" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+  </div>
+</section>
+
+<footer>
+  Jeanne & Jeremy — Mariage 10 juillet 2026
+</footer>
+
+</body>
+</html>
